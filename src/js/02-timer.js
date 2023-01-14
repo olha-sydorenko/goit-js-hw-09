@@ -1,5 +1,5 @@
 import flatpickr from "flatpickr";
-import "flatpickr/dist/flatpickr.min.css";
+import "flatpickr/dist/themes/material_blue.css";
 
 const startBtn = document.querySelector('button[data-start]');
 const timer = document.querySelector('.timer');
@@ -9,9 +9,9 @@ const dataHours = document.querySelector('.value[data-hours]');
 const dataMinutes = document.querySelector('.value[data-minutes]'); 
 const dataSeconds = document.querySelector('.value[data-seconds]');
 
- timer.style = 'display: flex; gap: 30px; margin-top: 20px'; 
+ timer.style = 'display: flex; gap: 30px; margin-top: 20px; font-size: 28px; text-transform: uppercase'; 
 //timer.lastElementChild.style = 'background-color: teal';
- //field.style = 'display: flex; flex-direction: column; align-items: center; background-color: teal';
+//  field.style = 'display: flex; flex-direction: column; align-items: center; background-color: yellow';
 
 startBtn.setAttribute('disabled', true);
 
