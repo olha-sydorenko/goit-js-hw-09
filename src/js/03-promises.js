@@ -8,7 +8,7 @@ const step = Number(form.step.value);
 const amount = Number(form.amount.value);
 const delay = Number(form.delay.value);
 
-  for (i = 1, j = delay;
+  for (let i = 1, j = delay;
     i <= amount;
     i += 1, j += step) {
       createPromise(i, j)
