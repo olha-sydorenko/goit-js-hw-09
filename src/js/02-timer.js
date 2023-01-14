@@ -3,11 +3,18 @@ import "flatpickr/dist/flatpickr.min.css";
 
 const startBtn = document.querySelector('button[data-start]');
 const timer = document.querySelector('.timer');
+const field = document.querySelector('.field');
 const dataDays = document.querySelector('.value[data-days]');
 const dataHours = document.querySelector('.value[data-hours]');
 const dataMinutes = document.querySelector('.value[data-minutes]'); 
 const dataSeconds = document.querySelector('.value[data-seconds]');
+
+ timer.style = 'display: flex; gap: 30px; margin-top: 20px'; 
+//timer.lastElementChild.style = 'background-color: teal';
+ //field.style = 'display: flex; flex-direction: column; align-items: center; background-color: teal';
+
 startBtn.setAttribute('disabled', true);
+
 
 const options = {
     enableTime: true,
@@ -41,8 +48,6 @@ const options = {
     dataSeconds.textContent = addLeadingZero(seconds);
     
 }, 1000);
-
-console.log (timerId);
 
 }) 
 
